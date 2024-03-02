@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainDashBoardController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F5DEB3;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnStudent" layoutX="57.0" layoutY="170.0" mnemonicParsing="false" onAction="#OnStudentClick" style="-fx-background-color: transparent;" text="Student" textFill="#131eae">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Button fx:id="btnCourse" layoutX="57.0" layoutY="225.0" mnemonicParsing="false" onAction="#OnCourseClick" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: transparent;" text="Course" textFill="#131eae">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <FontAwesomeIcon fill="#131eae" glyphName="USER" layoutX="42.0" layoutY="199.0" size="20" />
+            <FontAwesomeIcon fill="#131eae" glyphName="BOOK" layoutX="40.0" layoutY="254.0" size="20" />
+            <FontAwesomeIcon fill="#4075d0" glyphName="GRADUATION_CAP" layoutX="60.0" layoutY="87.0" size="75" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="slidebar" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnClose" layoutX="357.0" layoutY="13.0" mnemonicParsing="false" onAction="#OnCloseEvent" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIcon fill="#d03333" glyphName="CLOSE" size="20" />
+               </graphic>
+            </Button>
+            <Label layoutX="25.0" layoutY="100.0" prefHeight="280.0" prefWidth="356.0" style="-fx-background-color: transparent;" text="&quot; The Student Management Dashboard is a &#10;comprehensive tool designed to &#10;streamline administrative tasks&#10;related to student and course management.&#10; It offers a centralized platform for &#10;educational institutions to &#10;efficiently manage student records and &#10;course details. &quot;" textAlignment="CENTER" textFill="#45c0ed">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="30.0" text="Student Management" textFill="#4075d0">
+               <font>
+                  <Font name="Century Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </right>
+</BorderPane>

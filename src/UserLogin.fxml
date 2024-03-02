@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserLoginController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #0598FF;" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fill="#f5f5f5" glyphName="USERS" layoutX="73.0" layoutY="137.0" size="70" />
+            <Label layoutX="12.0" layoutY="184.0" text="STUDENT &#10;MANAGEMENT &#10;SYSTEM" textAlignment="CENTER" textFill="#f8f8f8">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="466.0" text="Copyright(c).All Rights Reserved " textFill="#f5f5f5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtusername" layoutX="93.0" layoutY="226.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtpassword" layoutX="93.0" layoutY="282.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnLogin" layoutX="103.0" layoutY="388.0" mnemonicParsing="false" onAction="#OnLoginEvent" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #0598FF;" text="Log in" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Button>
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="60.0" layoutY="249.0" size="20" wrappingWidth="12.428571701049805" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="56.0" layoutY="315.0" size="20" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="154.0" layoutY="125.0" size="50" />
+            <Hyperlink fx:id="lnkforgotpwd" layoutX="93.0" layoutY="318.0" onAction="#OnClick" text="Forgot Your Password ?" textFill="#0598ff" />
+            <Label layoutX="107.0" layoutY="139.0" text="USER-LOGIN" textFill="#0598ff">
+               <font>
+                  <Font name="Baskerville Old Face" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignup" layoutX="210.0" layoutY="388.0" mnemonicParsing="false" onAction="#OnSignupEvent" style="-fx-background-color: #22CE83;" text="Sign up" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClose" layoutX="314.0" layoutY="10.0" mnemonicParsing="false" onAction="#OnCloseEvent" prefHeight="25.0" prefWidth="27.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIcon fill="#e40a0a" glyphName="CLOSE" size="25" />
+               </graphic></Button>
+            <Label fx:id="lblAlert" layoutX="5.0" layoutY="32.0" prefHeight="57.0" prefWidth="310.0" textFill="#d34f35">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbRole" layoutX="93.0" layoutY="186.0" onAction="#OnSelectEvent" prefWidth="150.0" promptText="Role" style="-fx-background-color: #0598FF;" visibleRowCount="5" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER_SECRET" layoutX="60.0" layoutY="203.0" size="20" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
